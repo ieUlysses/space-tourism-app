@@ -1,12 +1,12 @@
 import React from 'react'
 
-function H1() {
+function H1(props) {
     return (
         <>
 
             {/* Pass txt info as props from parent.  */}
             <h1>
-                H1 Titles etc
+                {props.name}
             </h1>
         </>
     )

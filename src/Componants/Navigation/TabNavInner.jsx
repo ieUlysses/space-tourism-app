@@ -1,20 +1,15 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
-function TabNavInner() {
+
+
+function TabNavInner(props) {
     return (
-        <div>
-            <ul>
-                <li>
-                    Link 1
-                </li>
-                <li>
-                    Link 2
-                </li>
-                <li>
-                    Link 3
-                </li>
-            </ul>
-        </div>
+        <nav>
+
+            <NavLink to={props.link} >{props.name}</NavLink>
+
+        </nav>
     )
 }
 

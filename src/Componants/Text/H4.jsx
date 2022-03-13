@@ -1,10 +1,10 @@
 import React from 'react'
 
-function H4() {
+function H4(props) {
     return (
         <>
             <h4>
-                h4 sub headers etc
+                {props.role}
             </h4>
         </>
     )
