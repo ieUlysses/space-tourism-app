@@ -1,13 +1,14 @@
 import React from 'react'
 
-import nous from "../../Media/crew/image-anousheh-ansari.png"
 
 
-function ImageHolder() {
+function ImageHolder(props) {
+    console.log(props)
+    console.log(props.img)
     return (
         <>
             {/* Pass image info as props from parent. import alt text , src, etc */}
-            <img src={nous} alt="test image" /* srcset="" */ />
+            {/* <img src={ } alt={props.img} /> */}
 
         </>
     )
