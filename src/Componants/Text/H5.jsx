@@ -1,12 +1,15 @@
 import React from 'react'
 
+import "../../Styles/Text/H5.css"
+
 function H5() {
     return (
 
         <>
-            <h5>
-                sub Titles etc
-            </h5>
+            <span className='headingFive'>
+                SO, YOU WANT TO TRAVEL TO
+            </span>
+
         </>
     )
 }

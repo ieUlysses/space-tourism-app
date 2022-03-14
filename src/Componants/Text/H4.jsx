@@ -1,11 +1,13 @@
 import React from 'react'
 
+import "../../Styles/Text/H4.css"
+
 function H4(props) {
     return (
         <>
-            <h4>
+            <span className='headingFour'>
                 {props.role}
-            </h4>
+            </span>
         </>
     )
 }

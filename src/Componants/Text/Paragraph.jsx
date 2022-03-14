@@ -1,10 +1,12 @@
 import React from 'react'
 
+import "../../Styles/Text/Paragraph.css"
+
 function Paragraph(props) {
     return (
         <>
 
-            <p>{props.bio}</p>
+            <p className='paragraph'>{props.text}</p>
 
         </>
     )

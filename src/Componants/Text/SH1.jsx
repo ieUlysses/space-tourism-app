@@ -1,10 +1,12 @@
 import React from 'react'
 
+import "../../Styles/Text/SH1.css"
+
 function SH1(props) {
     return (
         <>
-            <span>
-                {props.dis}
+            <span className='subHeadingOne'>
+                {props.info}
             </span>
         </>
     )

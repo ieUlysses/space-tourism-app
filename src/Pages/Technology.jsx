@@ -1,7 +1,7 @@
 import React from 'react'
 import ImageHolder from '../Componants/Images/ImageHolder'
 import SlideNavNum from '../Componants/Navigation/SlideNavNum'
-import H1 from '../Componants/Text/H1'
+import H3 from '../Componants/Text/H3'
 import Paragraph from '../Componants/Text/Paragraph'
 
 import Launch from "../Media/technology/image-launch-vehicle-portrait.jpg"
@@ -10,8 +10,6 @@ import SpaceCapsule from "../Media/technology/image-space-capsule-portrait.jpg"
 
 
 function Technology() {
-
-
 
     const technologies = [
         {
@@ -77,8 +75,8 @@ function Technology() {
                 {technologies.map(technology => (
 
                     <div>
-                        <H1 name={technology.name} />
-                        <Paragraph bio={technology.description} />
+                        <H3 name={technology.name} />
+                        <Paragraph text={technology.description} />
                         <img src={technology.image} alt={technology.images.portrait} />
                     </div>
                 ))

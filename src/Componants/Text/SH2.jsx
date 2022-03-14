@@ -1,10 +1,12 @@
 import React from 'react'
 
-function SH2() {
+import "../../Styles/Text/SH2.css"
+
+function SH2(props) {
     return (
         <>
-            <span>
-                span Titles etc
+            <span className='subHeadingTwo'>
+                {props.text}
             </span>
         </>
     )
