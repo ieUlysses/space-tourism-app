@@ -3,12 +3,13 @@ import React from 'react'
 
 
 function ImageHolder(props) {
-    console.log(props)
-    console.log(props.img)
+
+    console.log(props.photo, `${props.name}`)
+
+
     return (
         <>
-            {/* Pass image info as props from parent. import alt text , src, etc */}
-            {/* <img src={ } alt={props.img} /> */}
+            <img src={`props.photo.${props.name}`} alt={props.name} />
 
         </>
     )

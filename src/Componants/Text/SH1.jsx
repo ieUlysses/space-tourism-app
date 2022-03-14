@@ -1,10 +1,10 @@
 import React from 'react'
 
-function SH1() {
+function SH1(props) {
     return (
         <>
             <span>
-                span Titles etc
+                {props.dis}
             </span>
         </>
     )
