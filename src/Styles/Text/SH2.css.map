@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,cAAc,CAAC;EACX,WAAW,EAAE,gBAAgB;EAC7B,SAAS,EAAE,IAAI;EACf,cAAc,EAAE,KAAK;CAAG",
+    "sources": [
+        "SH2.sass"
+    ],
+    "names": [],
+    "file": "SH2.css"
+}

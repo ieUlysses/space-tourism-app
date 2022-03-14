@@ -2,7 +2,7 @@ import React from 'react'
 import ImageHolder from '../Componants/Images/ImageHolder'
 
 import SlideNavDot from '../Componants/Navigation/SlideNavDot'
-import H1 from '../Componants/Text/H1'
+import H3 from '../Componants/Text/H3'
 import H4 from '../Componants/Text/H4'
 import Paragraph from '../Componants/Text/Paragraph'
 
@@ -93,8 +93,8 @@ function Crew() {
 
             {members.map(member => (
                 < div >
-                    <H1 name={member.name} />
-                    <Paragraph bio={member.bio} />
+                    <H3 name={member.name} />
+                    <Paragraph text={member.bio} />
                     <H4 role={member.role} />
                     <img src={member.image} alt={`here's an image of ${member.name} who acts as the ${member.role} for the mission`} />
                 </div>

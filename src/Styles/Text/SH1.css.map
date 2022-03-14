@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,cAAc,CAAC;EACX,WAAW,EAAE,SAAS;EACtB,SAAS,EAAE,IAAI;CAAG",
+    "sources": [
+        "SH1.sass"
+    ],
+    "names": [],
+    "file": "SH1.css"
+}

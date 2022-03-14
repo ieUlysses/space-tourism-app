@@ -1,13 +1,14 @@
 import React from 'react'
+import "../../Styles/Text/H1.css"
 
 function H1(props) {
     return (
         <>
 
             {/* Pass txt info as props from parent.  */}
-            <h1>
-                {props.name}
-            </h1>
+            <span className='headingOne'>
+                SPACE
+            </span>
         </>
     )
 }

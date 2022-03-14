@@ -2,8 +2,9 @@ import React from 'react'
 import ImageHolder from '../Componants/Images/ImageHolder'
 import TabNavInner from '../Componants/Navigation/TabNavInner'
 
-import H1 from '../Componants/Text/H1'
-import H4 from '../Componants/Text/H4'
+import H2 from '../Componants/Text/H2'
+import SH1 from '../Componants/Text/SH1'
+import SH2 from '../Componants/Text/SH2'
 import Paragraph from '../Componants/Text/Paragraph'
 
 /* import douglas from "../Media/crew/image-douglas-hurley.png"
@@ -103,10 +104,19 @@ function Crew() {
                 {destinations.map(destination => (
 
                     <div>
-                        <H1 name={destination.name} />
-                        <Paragraph bio={destination.description} />
-                        <H4 role={destination.role} />
+                        <H2 name={destination.name} />
+                        <Paragraph text={destination.description} />
+
                         <img src={destination.photo} alt={`This is an image of ${destination.name}`} />
+
+                        <div>
+                            <SH2 text="AVG. DISTANCE" />
+                            <SH1 info={destination.distance} />
+                        </div>
+                        <div>
+                            <SH2 text="EST. TRAVEL TIME" />
+                            <SH1 info={destination.travel} />
+                        </div>
 
                     </div>
                 ))

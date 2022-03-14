@@ -1,11 +1,13 @@
 import React from 'react'
 
+import "../../Styles/Text/H2.css"
+
 function H2() {
     return (
         <>
-            <h2>
-                H2 Titles etc
-            </h2>
+            <span className='headingTwo'>
+                MOON
+            </span>
         </>
     )
 }
