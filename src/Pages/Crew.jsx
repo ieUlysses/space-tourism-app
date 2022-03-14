@@ -1,13 +1,16 @@
 import React from 'react'
 import ImageHolder from '../Componants/Images/ImageHolder'
 
+import SlideNavDot from '../Componants/Navigation/SlideNavDot'
 import H1 from '../Componants/Text/H1'
 import H4 from '../Componants/Text/H4'
 import Paragraph from '../Componants/Text/Paragraph'
 
-/* import douglas from "../Media/crew/image-douglas-hurley.png"
+import douglas from "../Media/crew/image-douglas-hurley.png"
 import mark from "../Media/crew/image-mark-shuttleworth.png"
-import victor from "../Media/crew/image-victor-glover.png" */
+import victor from "../Media/crew/image-victor-glover.png"
+import anousheh from "../Media/crew/image-anousheh-ansari.png"
+
 
 
 
@@ -17,6 +20,7 @@ function Crew() {
     const members = [
         {
             "name": "Douglas Hurley",
+            image: douglas,
             "images": {
                 "png": "../../Media/crew/image-douglas-hurley.png",
                 "webp": "../Media/crew/image-douglas-hurley.webp",
@@ -27,6 +31,7 @@ function Crew() {
         },
         {
             "name": "Mark Shuttleworth",
+            image: mark,
             "images": {
                 "png": "../../Media/crew/image-mark-shuttleworth.png",
                 "webp": "../Media/crew/image-mark-shuttleworth.webp",
@@ -37,6 +42,7 @@ function Crew() {
         },
         {
             "name": "Victor Glover",
+            image: victor,
             "images": {
                 "png": "../../Media/crew/image-victor-glover.png",
                 "webp": "../Media/crew/image-victor-glover.webp",
@@ -47,6 +53,7 @@ function Crew() {
         },
         {
             "name": "Anousheh Ansari",
+            image: anousheh,
             "images": {
                 "png": "../../Media/crew/image-anousheh-ansari.png",
                 "webp": "../Media/crew/image-anousheh-ansari.webp",
@@ -56,20 +63,47 @@ function Crew() {
             "bio": "Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space."
         }]
 
+    const navi = [
+        {
+            link: "/douglas-hurley",
+            number: "1",
+            name: "Douglas Hurley"
+        },
+        {
+            link: "/mark-shuttleworth",
+            number: "2",
+            name: "Mark Shuttleworth"
+        },
+        {
+            link: "/victor-glover",
+            number: "3",
+            name: "Victor Glover"
+        },
+        {
+            link: "/anousheh-ansari",
+            number: "4",
+            name: "Anousheh Ansari"
+        },
+    ]
+
 
 
     return (
         <>
 
-            {members.map(member => (<li >
-                {console.log(member.images.png)}
-                <div>
+            {members.map(member => (
+                < div >
                     <H1 name={member.name} />
                     <Paragraph bio={member.bio} />
                     <H4 role={member.role} />
-                    <ImageHolder img={member.images.png} />
+                    <img src={member.image} alt={`here's an image of ${member.name} who acts as the ${member.role} for the mission`} />
                 </div>
-            </li>))
+            ))
+            }
+
+            {navi.map(navi => (
+                <SlideNavDot name={navi.name} number={navi.number} link={navi.link} />
+            ))
             }
 
         </>

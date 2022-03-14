@@ -1,20 +1,12 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
-function SlideNavNum() {
+function SlideNavNum(props) {
+    console.log(props.number)
     return (
-        <div>
-            <ul>
-                <li>
-                    Link 1
-                </li>
-                <li>
-                    Link 2
-                </li>
-                <li>
-                    Link 3
-                </li>
-            </ul>
-        </div>
+        <>
+            <NavLink to={props.link} >{props.number}</NavLink>
+        </>
     )
 }
 

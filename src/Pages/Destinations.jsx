@@ -10,7 +10,10 @@ import Paragraph from '../Componants/Text/Paragraph'
 import mark from "../Media/crew/image-mark-shuttleworth.png"
 import victor from "../Media/crew/image-victor-glover.png" */
 
-
+import Moon from "../Media/destination/image-moon.png"
+import titan from "../Media/destination/image-titan.png"
+import mars from "../Media/destination/image-mars.png"
+import europa from "../Media/destination/image-europa.png"
 
 
 function Crew() {
@@ -18,6 +21,7 @@ function Crew() {
     const destinations = [
         {
             "name": "Moon",
+            photo: Moon,
             "images": {
                 "png": "./assets/destination/image-moon.png",
                 "webp": "./assets/destination/image-moon.webp"
@@ -28,6 +32,7 @@ function Crew() {
         },
         {
             "name": "Mars",
+            photo: mars,
             "images": {
                 "png": "./assets/destination/image-mars.png",
                 "webp": "./assets/destination/image-mars.webp"
@@ -38,6 +43,7 @@ function Crew() {
         },
         {
             "name": "Europa",
+            photo: europa,
             "images": {
                 "png": "./assets/destination/image-europa.png",
                 "webp": "./assets/destination/image-europa.webp"
@@ -48,9 +54,10 @@ function Crew() {
         },
         {
             "name": "Titan",
+            photo: titan,
             "images": {
                 "png": "./assets/destination/image-titan.png",
-                "webp": "./assets/destination/image-titan.webp"
+                "webp": "./assets/destination/image-titan.webp",
             },
             "description": "The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.",
             "distance": "1.6 bil. km",
@@ -93,17 +100,20 @@ function Crew() {
             </div>
 
             <div>
-                {destinations.map(destination => (<li >
-                    {console.log(destination.images.png)}
+                {destinations.map(destination => (
+
                     <div>
                         <H1 name={destination.name} />
                         <Paragraph bio={destination.description} />
                         <H4 role={destination.role} />
-                        <ImageHolder img={destination.images.png} />
+                        <img src={destination.photo} alt={`This is an image of ${destination.name}`} />
+
                     </div>
-                </li>))
+                ))
                 }
             </div>
+
+
 
         </>
     )
