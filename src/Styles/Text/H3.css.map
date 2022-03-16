@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "AAAA,AAAA,aAAa,CAAC;EACV,WAAW,EAAE,SAAS;EACtB,SAAS,EAAE,IAAI;EACf,KAAK,EAAE,OAAO;CAAG",
     "sources": [
-        "h3.sass"
+        "H3.sass"
     ],
     "names": [],
-    "file": "h3.css"
+    "file": "H3.css"
 }

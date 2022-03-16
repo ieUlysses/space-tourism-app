@@ -1,5 +1,5 @@
 import React from 'react'
-import ImageHolder from '../Componants/Images/ImageHolder'
+/* import ImageHolder from '../Componants/Images/ImageHolder' */
 import SlideNavNum from '../Componants/Navigation/SlideNavNum'
 import H3 from '../Componants/Text/H3'
 import Paragraph from '../Componants/Text/Paragraph'

@@ -1,16 +1,13 @@
 import React from 'react'
-import ImageHolder from '../Componants/Images/ImageHolder'
-import TabNavInner from '../Componants/Navigation/TabNavInner'
 
+//componant imports
+import TabNavInner from '../Componants/Navigation/TabNavInner'
 import H2 from '../Componants/Text/H2'
 import SH1 from '../Componants/Text/SH1'
 import SH2 from '../Componants/Text/SH2'
 import Paragraph from '../Componants/Text/Paragraph'
 
-/* import douglas from "../Media/crew/image-douglas-hurley.png"
-import mark from "../Media/crew/image-mark-shuttleworth.png"
-import victor from "../Media/crew/image-victor-glover.png" */
-
+//image imports
 import Moon from "../Media/destination/image-moon.png"
 import titan from "../Media/destination/image-titan.png"
 import mars from "../Media/destination/image-mars.png"
