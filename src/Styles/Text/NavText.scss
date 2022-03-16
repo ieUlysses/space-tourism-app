@@ -1,0 +1,22 @@
+.nav-text{
+    font-family: Barlow Condensed;
+    font-size: 16px;
+    letter-spacing: 2.75px;
+    color: #fff;
+    text-decoration: none;
+    height: 100%;
+    align-items: center;
+    display: flex;
+
+}
+
+
+.active{
+    border-bottom: 2px solid rgb(255, 255, 255);
+    
+}
+
+.nav-text:hover{
+    border-bottom: 2px solid rgba(255, 255, 255, 0.747);
+  
+}
