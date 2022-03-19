@@ -2,7 +2,7 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "TabNavInner.sass"
+        "TabNavInner.scss"
     ],
     "names": [],
     "file": "TabNavInner.css"

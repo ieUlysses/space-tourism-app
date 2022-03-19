@@ -28,9 +28,8 @@ function TabNavMain() {
 
                 <div className='nav-wrapper'>
 
-
                     {links.map(link => (
-                        //Styling rules for interactive nav
+
                         <NavLink to={link.to}
                             className={({ isActive }) => isActive ? "active nav-text " : " nav-text"}> {link.key} {link.title}</NavLink>
                     ))
@@ -55,8 +54,9 @@ function TabNavMain() {
 
                 <ul className='nav-menu'>
                     {links.map(link => (
-                        //Styling rules for interactive nav
-                        <NavLink to={link.to} /* className={({ isActive }) => isActive ? "red" : "blue"} */>{link.title}</NavLink>
+
+                        <NavLink onClick={toggleOpen}
+                            to={link.to} className={({ isActive }) => isActive ? "active nav-text " : " nav-text"}>{link.title}</NavLink>
                     ))
                     }
                 </ul>
